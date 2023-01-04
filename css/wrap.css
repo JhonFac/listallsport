@@ -1,0 +1,73 @@
+.wrap {
+    width: 100%;
+    max-width: 1170px;
+    margin: 50px auto;
+}
+
+
+
+/* Tabla de precio*/
+
+.pricing-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pricing-table {
+    width: 100%;
+    margin: 20px;
+    transition: transform .3s ease;
+
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
+}
+
+.pricing-table:hover {
+    transform: scale(1.07);
+}
+
+.pricing-table-cont {
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    position: relative;
+    height: 100px;
+
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    transition: .3s ease;
+}
+
+
+
+.pricing-table-head {
+    color: #173D50;
+    padding: 30px 0px;
+}
+
+
+
+/* RESPONSIVE ===============================  */
+@media screen and (max-width: 750px) {
+    .pricing-table {
+        width: 72%;
+        margin-bottom: 20px;
+    }
+
+    .pricing-wrap {
+        justify-content: center;
+    }
+
+    .pricing-table:hover {
+        transform: scale(1.0);
+    }
+}
+
+@media screen and (max-width: 100px) {
+    .pricing-table {
+        width: 100%;
+    }
+}
